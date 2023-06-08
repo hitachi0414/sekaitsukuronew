@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>世界創造計畫 - 主選單</title>
+  <style>
+    body {
+      background-image: url("../images/Main-menu-BG.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button {
+      position: absolute;
+      height: 20px;
+    }
+
+    #button1 {
+      top: 200px;
+      right: 780px;
+      transform: scale(0.4);
+    }
+
+    #button2 {
+      top: 60px;
+      left: 10px;
+      transform: scale(0.38);
+    }
+
+    #button3 {
+      top: 400px;
+      left: 345px;
+      transform: scale(0.32);
+    }
+
+    #button4 {
+      top: 240px;
+      left: 708px;
+      transform: scale(0.37);
+    }
+
+    #button6 {
+      top: 800px;
+      left: 650px;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" class="button" id="button1">
+    <img src="../images/PartA-Bottom.png" alt="PartA-Bottom">
+  </a>
+
+  <a href="../PartB/Menu-B-B-ori.html" class="button" id="button2">
+    <img src="../images/PartB-Bottom.png" alt="PartB-Bottom">
+  </a>
+
+  <a href="#" class="button" id="button3">
+    <img src="../images/PartC-Bottom.png" alt="PartC-Bottom">
+  </a>
+
+  <a href="#" class="button" id="button4">
+    <img src="../images/DesignCollection-Bottom.png" alt="DesignCollection-Bottom">
+  </a>
+
+  <audio src="../Audio/Main-Music.mp3" id="music"></audio>
+
+  <button class="button" id="button6" onclick="playMusic()">播放音樂</button>
+
+  <script>
+  function playMusic() 
+  {
+    var music = document.getElementById('music');
+    music.play();
+  }
+  </script>
+</body>
+</html>

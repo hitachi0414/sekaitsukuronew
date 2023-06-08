@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>世界創造計畫-Story-B-1</title>
+  <style>
+    body {
+      background-image: url(../images/PartB-3Image.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .buttom
+    {
+      position: absolute;
+      height: 20px;
+      top: 680px;
+      left: 800px;
+      transform: scale(0.2);
+    }
+
+    #button6 {
+      top: 1000px;
+      left: 650px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="buttom">
+    <a href="../PartB/Menu-B-B-3fin.html">
+      <img src="../images/NextPage-Bottom.PNG" alt="BackToMenuB">
+    </a>
+  </div>
+
+  <audio src="../Audio/SongB-3.mp3" id="music"></audio>
+
+  <button class="button" id="button6" onclick="playMusic()">播放音樂</button>
+
+  <script>
+  function playMusic() 
+  {
+    var music = document.getElementById('music');
+    music.play();
+  }
+  </script>
+</body>
+</html>
+
